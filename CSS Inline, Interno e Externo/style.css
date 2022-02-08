@@ -1,0 +1,17 @@
+/* Comentário em CSS */
+
+body {
+    background-color: #dfdfdf;
+}
+
+p {
+    color: rgb(0, 0, 197);
+}
+
+/* Classes */
+.citacao {
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    background-color: rgb(255, 255, 128);
+}
