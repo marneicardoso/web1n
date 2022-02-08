@@ -1,0 +1,139 @@
+/* Site - HTML e CSS */
+
+html {
+    font-size: 18px; /* valor base (root) */
+}
+
+body {
+    /* Limpar as configurações padrão dos navegadores */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #999999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    /* background: #999999 url("../img/food.png") no-repeat; */
+    /* background-image: url("../img/food.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+
+/* Classes */
+.container {
+    background-color: #f9f9f9;
+    /* height: 100vh; */
+    width: 80%;
+    margin: auto;
+}
+
+.banner {
+    background-color: #008cff;
+    height: 200px;
+}
+
+/* Todas as imagens que estiverem dentro do banner,
+    ficam com 100% de altura (height) e largura (Width) */
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    background-color: #e24060;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    /* font-size: 1.4rem; */
+    font-size: 24px;
+    transition: 1s;
+}
+
+.menu a:hover {
+    background-color: #ca2748;
+    transition: 0.5s;
+}
+
+.corpo {
+    min-height: 350px;
+    padding: 35px;
+}
+
+.rodape {
+    background-color: #232323;
+    color: #999999;
+    padding: 35px;
+    height: 150px;
+}
+
+.rodape a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #f9f9f9;
+}
+
+
+
+.links {
+    /* border: solid 1px greenyellow; */
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.conteudo {
+    /* border: solid 1px #fcff3e; */
+    display: inline-block;
+    width: 54%;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.redes-sociais {
+    /* border: solid 1px red; */
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+}
+
+.redes-sociais img {
+    width: 32px;
+    vertical-align: middle;
+}
+
+
+
+#cor1 {
+    color: #008cff;
+}
+
+
+
+/* Style dos links */
+/*a:link {
+    color: greenyellow;
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:active {
+    color: cornflowerblue;
+}
+
+a:hover {
+    color: fuchsia;
+}/*
