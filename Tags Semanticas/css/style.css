@@ -1,0 +1,42 @@
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #999999;
+}
+
+.banner {
+    height: 250px;
+    background-color: #217aff;
+    color: #f9f9f9;
+}
+
+.menu {
+    background-color: #34455c;
+    padding: 25px;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 1.5rem;
+}
+
+.corpo {
+    min-height: 800px;
+    padding: 35px;
+    background-color: #f9f9f9;
+}
+
+.rodape {
+    width: 75%;
+    height: 85px;
+    color: #999999;
+    padding: 15px 35px;
+    background-color: #232323;
+    position: fixed;
+    bottom: 0;
+}
