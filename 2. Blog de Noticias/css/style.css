@@ -1,0 +1,16 @@
+
+/* Variáveis Globais em CSS */
+:root {
+    --tamanho-fonte: 18px;
+    --cor1: #f9f9f9;
+    --cor2: #dddddd;
+    --cor3: #999999;
+    --cor4: #232323;
+    --cor5: #4030ab;
+}
+
+/* Limpa as configurações padrão dos navegadores */
+
+body {
+    /* background-color: aquamarine; */
+}
