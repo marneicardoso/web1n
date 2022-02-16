@@ -1,0 +1,241 @@
+
+/* Variáveis Globais em CSS */
+:root {
+    --tamanho-fonte: 18px;
+    --cor1: #f9f9f9;
+    --cor2: #dddddd;
+    --cor3: #999999;
+    --cor4: #232323;
+    --cor5: #4030ab;
+    --cor6: #6464ff;
+}
+
+/* Importa a fonte Roboto da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Limpa as configurações padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--tamanho-fonte);
+}
+
+body {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+nav {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    background-color: var(--cor1);
+    border-bottom: 1px solid var(--cor2);
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logotipo {
+    padding-left: 10%;
+    display: inline-block;
+}
+
+.logotipo span {
+    color: var(--cor6);
+}
+
+.menu {
+    float: right;
+    padding-right: 10%;
+}
+
+.menu a {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    background-color: var(--cor6);
+    color: var(--cor1);
+}
+
+/* Menu Hamburguer - Dropdown */
+.drop-menu {
+    float: right;
+    overflow: hidden;
+    margin-right: 2%;
+    display: none;
+}
+
+.drop-button {
+    margin: 0;
+    border: none;
+    padding: 5px 35px;
+    background-color: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor4);
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor1);
+    min-width: 160px;
+    box-shadow: 0 8px 10px 0 var(--cor3);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+    z-index: 1;
+}
+
+.drop-content a {
+    display: block;
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    color: var(--cor4);
+}
+
+.drop-content a:hover {
+    background-color: var(--cor6);
+    color: var(--cor1);
+}
+
+.drop-menu:hover .drop-content {
+    display: block;
+}
+
+/* Simula o Menu Hamburguer */
+.drop-button span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: var(--cor4);
+    transition: 2.5s;
+}
+
+.drop-button:hover span {
+    background-color: var(--cor3);
+    transition: 0.3s;
+}
+
+section {
+    margin: auto;
+    margin-bottom: 65px;
+}
+
+article {
+    padding: 15px;
+    margin: 10px 0;
+    overflow: hidden;
+    background-color: var(--cor1);
+}
+
+article img {
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--cor2);
+    background-color: var(--cor1);
+    margin-right: 15px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+h1:hover {
+    color: var(--cor6);
+    cursor: pointer;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: var(--cor3);
+    background-color: var(--cor4);
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+}
+
+/* === Media Queries */
+
+/* Extra Small (xs): Smartphone - Portrait (Retrato) */
+@media (min-width: 300px) {
+    section {
+        width: 96%;
+        margin-top: 110px;
+    }
+
+    article img {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .drop-menu {
+        display: block;
+    }
+}
+
+/* Small (sm): Smartphone - Landscape (Paisagem) */
+@media (min-width: 576px) {
+    article img {
+        width: 38%;
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    section {
+        width: 80%;
+        margin-top: 75px;
+    }
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+    article img {
+        width: 25%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .drop-menu {
+        display: none;
+    }
+}
+
+/* Extra Large (xl): Computador */
+@media (min-width: 1200px) {
+    article img {
+        width: 15%;
+    }
+}
