@@ -1,0 +1,45 @@
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background-color: #f9f9f9;
+}
+
+.item {
+    border: solid 1px #232323;
+    background-color: #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 200px 350px 150px;
+    grid-template-areas:
+        "cabecalho cabecalho cabecalho cabecalho"
+        "lateral principal principal principal"
+        "rodape rodape rodape rodape"
+        ;
+}
+
+/* Nome das áreas */
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.lateral {
+    grid-area: lateral;
+}
+
+.rodape {
+    grid-area: rodape;
+}

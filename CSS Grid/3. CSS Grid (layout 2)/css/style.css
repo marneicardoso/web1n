@@ -1,0 +1,42 @@
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto 50%;
+    grid-template-rows: 50px 150px;
+    gap: 10px;
+    background-color: #1f4774;
+    padding: 10px;
+}
+
+.container * {
+    border: solid 1px #232323;
+    background-color: #dddddd;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+header {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+main {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+footer {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+}
