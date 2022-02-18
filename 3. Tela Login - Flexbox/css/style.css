@@ -1,0 +1,67 @@
+
+/* Importa a fonte 'Open Sans' da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background: #dce0e2 url("../img/bg.png");
+    /* background: #ddddcb no-repeat url("https://cdn.pixabay.com/photo/2022/02/06/11/01/beach-6996789_960_720.jpg"); */
+    /* background-size: cover; */
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    margin-top: 75px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 0 5px 0 #232323;
+    background: linear-gradient(90deg, #1f4774, #833964);
+    /* gradiente: graus, cor inicial, cor final */
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    color: #f9f9f9;
+    border: solid #d7f145 1px;
+}
+
+form h1 {
+    margin-bottom: 15px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+    /* border: none; */
+    /* outline: none; */
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form ::placeholder {
+    color: #aaaaaa;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.form-button {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
