@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h3>CSS Flebox</h3>
+
+        <p>
+            O Flexbox organiza os elementos de uma página HTML dentro de um container de forma dinâmica, independente das suas dimensões, mantendo um layout flexível dentro do seu elemento pai (container) e reorganizando-se de acordo com o tamanho da tela, de forma responsiva.
+        </p>
+
+        <hr>
+        <h3>Alinhamento dos eixos</h3>
+
+        <p>
+            Para entender o <span>funcionamento do Flexbox</span> é importante entender como os itens são distribuídos
+            no container, com eixo principal e eixo transversal.
+        </p>
+
+        <p>
+            Se a propriedade <span>flex-direction</span> receber o valor <span>row</span> ou <span>row-reverse</span>
+            (organização em linhas), o eixo principal do container será o horizontal. Já se essa propriedade receber o
+            valor <span>column</span> ou <span>column-reverse</span> (organização em coluna), o eixo principal será o
+            vertical.
+        </p>
+
+        <p>
+            Consequentemente isso definirá qual é o eixo transversal. Se o principal for o vertical, o transversal será
+            o horizontal e vice-versa.
+        </p>
+
+        <img src="img/alinhamento-flexbox.png">
+
+        <ul>
+            <li>
+                <span>Tamanho principal:</span> É a dimensão do elemento na direção do eixo principal (largura, caso
+                horizontal e altura caso vertical);
+            </li>
+
+            <li>
+                <span>Tamanho transversal:</span> É a dimensão do elemento na direção do eixo transversal (largura, caso horizontal e altura caso vertical);
+            </li>
+
+            <li>
+                <span>Início principal e final principal:</span> Representam o início e o fim do eixo principal;
+            </li>
+
+            <li>
+                <span>Início transversal e final transversal:</span> Representam o início e o fim do eixo transversal.
+            </li>
+        </ul>
+
+        <hr>
+        <h3>display</h3>
+
+        <pre>
+        .container {
+            display: flex;
+        }
+        </pre>
+
+        <h3>flex-direction</h3>
+
+        <pre>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        </pre>
+
+        <ul>
+            <li>
+                <span>row</span> (padrão): Os itens são organizados em forma de linha da esquerda para a direita
+            </li>
+
+            <li>
+                <span>row-reverse</span>: Os itens são organizados em forma exibição em linha da direita para a esquerda
+            </li>
+
+            <li>
+                <span>column</span>: Os itens são organizados em forma de colunas iniciando de cima para baixo
+            </li>
+
+            <li>
+                <span>column-reverse</span>: Os itens são organizados em forma de colunas iniciando de baixo para cima
+            </li>
+        </ul>
+
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </main>
+</body>
+
+</html>

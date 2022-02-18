@@ -1,0 +1,51 @@
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background-color: #eeeeee;
+}
+
+main {
+    width: 80%;
+    margin: 35px auto;
+    padding: 0 45px;
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+    text-align: justify;
+}
+
+main img {
+    width: 75%;
+}
+
+.container {
+    /* Determina que os elementos "filho" serão flexíveis (flex)  */
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+}
+
+/* .container span, ul span { */
+span {
+    font-weight: 700;
+}
+
+ul li {
+    margin-bottom: 10px;
+    /* list-style-type: none; /* Retira as marcações da lista */
+}
+
+.item {
+    /* height: 50px; */
+    /* width: 150px; */
+    text-align: center;
+    padding: 15px 100px;
+    background-color: #999999;
+    border: solid 2px #232323;
+}
