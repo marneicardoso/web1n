@@ -1,0 +1,121 @@
+
+/* Importa a fonte MontSerrat da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* Barra de navegação */
+nav {
+    width: 100%;
+    padding: 5px 15px;
+    position: fixed;
+    z-index: 1;
+    background-color: #f9f9f9;
+    border-bottom: solid 2px #dddddd;
+    /* box-shadow: 0 0 10px 0 #232323; */
+}
+
+.menu {
+    padding: 15px 0;
+    text-align: right;
+}
+
+.menu ul {
+    margin: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #232323;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    background-color: #e2b53a;
+    color: #493b14;
+}
+
+/* Pega o elemento diretamente dentro do elemento pai */
+/* .row > img {
+    width: 100%;
+} */
+
+/* Produto */
+.produto {
+    margin-top: 15px;
+    padding: 15px;
+    transition: 0.8s;
+}
+
+.produto:hover {
+    background-color: #e2b53a;
+    box-shadow: 0 1px 5px 2px #23232350;
+}
+
+.foto-produto {
+    width: 100%;
+    overflow: hidden;
+}
+
+.foto-produto img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.foto-produto img:hover {
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
+.nome-produto {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 10px 0 5px;
+}
+
+.descricao-produto {
+    height: 120px;
+    text-align: left;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.preco-produto {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 8px 0;
+}
+
+.btn {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+footer {
+    width: 100%;
+    padding: 25px;
+    color: #999999;
+    background-color: #232323;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
