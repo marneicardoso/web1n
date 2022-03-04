@@ -1,0 +1,88 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background-color: #232323;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 25px 45px 350px;
+    background-color: #f7f7f7;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    padding: 15px;
+    position: relative;
+    /* Position relative necessário para mover o elemento */
+    background-color: #999999;
+
+    /* Chama a animação */
+    animation-name: a4;
+    animation-delay: 1s; /* tempo de atraso */
+    animation-duration: 3s; /* tempo de duração */
+    animation-timing-function: ease; /* forma de execução (suave, linear) */
+    animation-iteration-count: infinite; /* quanta vezes vai executar */
+    /* animation-fill-mode: forwards; /* preenchimento */
+    animation-direction: alternate;
+}
+
+/* Animações em CSS */
+@keyframes a1 {
+    from { background-color: red; }
+    to { background-color: #12c92a; }
+}
+
+@keyframes a2 {
+   to { background-color: cyan; }
+}
+
+@keyframes a3 {
+    0% { background-color: #1468ac; }
+    25% { background-color: #ffd000; }
+    50% { background-color: #dc143c; }
+    75% { background-color: #74ac14; }
+    100% { background-color: #9f12d6; }
+}
+
+@keyframes a4 {
+    0% {
+        background-color: #1468ac;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background-color: #ffd000;
+        left: 500px;
+        top: 0;
+    }
+    50% {
+        background-color: #dc143c;
+        left: 350px;
+        top: 350px;
+        width: 250px;
+    }
+    75% {
+        background-color: #74ac14;
+        left: 50px;
+        top: 350px;
+        /* opacity: 0; */
+        /* transform: rotate(720deg); */
+        transform: scale(1.5);
+    }
+    100% {
+        background-color: #9f12d6;
+        left: 0;
+        top: 0;
+    }
+}
