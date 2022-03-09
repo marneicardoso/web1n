@@ -1,0 +1,28 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #232323;
+    color: #232323;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 25px 35px 45px;
+    background-color: #f9f9f9;
+}
+
+hr {
+    margin: 75px 0 25px;
+}
+
+img {
+    width: 350px;
+    height: 230px;
+}

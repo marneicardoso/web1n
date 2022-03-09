@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM com JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Manipulando DOM com JavaScript</h2>
+
+        <h3>DOM (Document Object Model) é utilizado para manipular o conteúdo do documento HTML</h3>
+
+        <h4>Exemplos:</h4>
+
+        <hr>
+        <!-- Exemplo 1 -->
+        <h4>1. Mudando valores com .value</h4>
+
+        <input type="text" id="texto1" value="Texto padrão">
+        <button onclick="mudarTexto()">Mudar texto</button>
+
+        <hr>
+        <!-- Exemplo 2 -->
+        <h4>2. Mudando valores com .innerText</h4>
+
+        <p id="texto2">Texto padrão</p>
+        <button onclick="mudarTexto2()">Mudar texto 2</button>
+
+        <hr>
+        <!-- Exemplo 3 -->
+        <h4>3. Mudando valores com .innerHTML</h4>
+
+        <p id="texto3">Texto padrão</p>
+        <button onclick="mudarTexto3()">Mudar texto 3</button>
+
+        <hr>
+        <!-- Exemplo 4 -->
+        <h4>4. Mudando uma imagem ao clicar</h4>
+
+        <img src="img/001.jpg" id="img1" onmouseup="mudarImagem()">
+
+        <hr>
+        <!-- Exemplo 5 -->
+        <h4>5. Mudando uma imagem (ao passar o mouse)</h4>
+
+        <img src="img/002.jpg" id="img2" onmouseover="mudarImagem2()" onmouseout="voltarImagem2()">
+
+        <hr>
+        <!-- Exemplo 6 -->
+        <h4>6. Mudando o CSS (estilo)</h4>
+
+        <p id="texto6">texto colorido</p>
+        <button onclick="mudarCorTexto()">Mudar cor do texto</button>
+
+        <hr>
+        <!-- Exemplo 7 -->
+        <h4>7. Mudando o CSS (com parâmetro)</h4>
+
+        <p id="texto7" onclick="mudarTexto7(this)">Clique neste texto</p>
+
+        <hr>
+        <!-- Exemplo 8 -->
+        <h4>8. Chamando uma function que chama outra</h4>
+
+        <p>Informe os valores</p>
+
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+
+        <button onclick="mostrarResultado(n1, n2, resultado)">Calcular</button>
+
+        <h4 id="resultado">Resultado: 0</h4>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
