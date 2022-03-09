@@ -26,3 +26,17 @@ img {
     width: 350px;
     height: 230px;
 }
+
+.box {
+    width: 100px;
+    background-color: #ff7f50;
+    padding: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#display {
+    text-align: right;
+    font-family: Consolas;
+    font-size: 1.5rem;
+}

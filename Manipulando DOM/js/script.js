@@ -73,9 +73,52 @@ function mostrarResultado(n1, n2, resultado) {
     n2 = parseInt(n2.value);
 
     // resultado.innerHTML = "Resultado: " + somar(n1, n2);
-    resultado.innerHTML = `Resultado ${somar(n1, n2)}`;
+    resultado.innerHTML = `Resultado: ${somar(n1, n2)}`;
 }
 
 function somar(valor1, valor2) {
     return valor1 + valor2;
+}
+
+// 9. Clicar, segurar e soltar
+function segurar(elemento) {
+    elemento.innerHTML = "Solte!";
+    elemento.style.backgroundColor = "#1ec5e5";
+}
+
+function soltar(elemento) {
+    elemento.innerHTML = "Clicar!";
+    elemento.style.backgroundColor = "#ff7f50";
+}
+
+// 10. Data e hora
+function mostrarData() {
+    document.getElementById('data').innerHTML = Date();
+}
+
+// Variável com Espoco Global
+let contador = 0;
+
+// 11. Contador de Cliques
+function contarCliques() {
+    // Incrementa o contador
+    contador++;
+    // contador = contador + 1;
+    // contador += 1;
+
+    // Mostra o resultado
+    atualizarDisplay();
+    // document.getElementById('display').value = contador;
+}
+
+function zerarContador() {
+    contador = 0;
+
+    // Mostra o resultado
+    atualizarDisplay();
+    // document.getElementById('display').value = contador;
+}
+
+function atualizarDisplay() {
+    document.getElementById('display').value = contador;
 }
