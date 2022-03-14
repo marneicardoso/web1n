@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercícios básicos de programação</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Exercícios básicos de programação</h1>
+
+		<hr>
+		<!-- Exercício 1 -->
+		<h3>1. Escreva um algoritmo que receba 2 valores. Some os valores e mostre o resultado na tela.</h3>
+
+		<input type="text" id="resultado1" disabled value="0" class="display">
+
+		<p>Valor 1: <input type="number" id="valor1"></p>
+		<p>Valor 2: <input type="number" id="valor2"></p>
+
+		<button type="button" onclick="somar()">Somar</button>
+
+
+
+
+
+
+
+
+
+
+		<hr>
+		<!-- Exercício 2 -->
+		<h3>2. Escreva um algoritmo que receba 3 notas. Calcule a média das notas e mostre na tela.</h3>
+
+		<input type="text" id="resultado2" disabled value="0" class="display">
+
+		<!-- <p>Nota 1: <input type="number" id="nota1"></p>
+		<p>Nota 2: <input type="number" id="nota2"></p>
+		<p>Nota 3: <input type="number" id="nota3"></p> -->
+
+		<button type="button" onclick="calcularMedia()">Calcular Média</button>
+
+
+
+
+
+
+
+
+
+
+		<hr>
+		<!-- Exercício 3 -->
+		<h3>3. Escreva um algoritmo que calcule o desconto de 10% sobre o preço de um produto. Apresente o novo preço na tela.</h3>
+
+		R$ <input type="text" id="resultado3" disabled value="0" class="display">
+
+		<p>Valor do produto: R$ <input type="number" id="valorProduto"></p>
+
+		<button type="button" onclick="calcularDesconto()">Calcular Desconto</button>
+
+
+
+
+
+
+
+
+
+
+		<hr>
+		<!-- Exercício 4 -->
+		<h3>4. Escreva um algoritmo que receba um percentual de desconto e calcule esse desconto sobre o preço de um produto. Apresente o novo preço na tela.</h3>
+
+		R$ <input type="text" id="resultado4" disabled value="0" class="display">
+
+		<p>Valor do produto: R$ <input type="number" id="valorProduto2"></p>
+		<p>Percentual de desconto: <input type="number" id="percentualDesconto"> %</p>
+
+		<button type="button" onclick="calcularDesconto2()">Calcular Desconto 2</button>
+		
+
+
+
+
+
+
+
+
+		<hr>
+		<!-- Exercício 5 -->
+		<h3>5. Escreva um algoritmo que receba 2 valores e inverta os valores informados. Mostre na tela.</h3>
+
+		<p>Valor A: <input type="number" id="valorA"></p>
+		<p>Valor B: <input type="number" id="valorB"></p>
+
+		<button type="button" onclick="inverterValores()">Inverter Valores</button>
+				
+
+
+
+
+
+
+
+		<hr>
+		<!-- Exercício 6 -->
+		<h3>6. Uma sorveteria vende 3 tipos de picolés: o de fruta custa R$ 2,50; o de chocolate custa R$ 3,50 e o recheado custa R$ 4,50. Escreva um algoritmo que receba a quantidade de picolés vendida de cada tipo e mostre quanto a sorveteria faturou por cada tipo de picolé e no total de vendas.</h3>
+
+		R$ <input type="text" id="resultado6" disabled value="0" class="display">
+
+		<!-- <p>Quantidade Fruta:</p>
+		<input type="number" id="quantidadeFruta">
+		R$ <input type="text" id="resultadoFruta" disabled>
+
+		<p>Quantidade Chocolate:</p>
+		<input type="number" id="quantidadeChocolate">
+		R$ <input type="text" id="resultadoChocolate" disabled>
+
+		<p>Quantidade Recheado:</p>
+		<input type="number" id="quantidadeRecheado">
+		R$ <input type="text" id="resultadoRecheado" disabled>
+
+		<p><button type="button" onclick="calcularVendaPicoles()">Calcular Venda</button></p> -->
+						
+		<!-- Versão 2 -->
+		<p>Quantidade Fruta:</p>
+		<input type="number" id="quantidadeFruta" oninput="calcularVendaPicoles()">
+		R$ <input type="text" id="resultadoFruta" disabled>
+
+		<p>Quantidade Chocolate:</p>
+		<input type="number" id="quantidadeChocolate" oninput="calcularVendaPicoles()">
+		R$ <input type="text" id="resultadoChocolate" disabled>
+
+		<p>Quantidade Recheado:</p>
+		<input type="number" id="quantidadeRecheado" oninput="calcularVendaPicoles()">
+		R$ <input type="text" id="resultadoRecheado" disabled>
+
+
+
+
+
+		<hr>
+		<!-- Exercício 7 -->
+		<h3>7. Considerando que, para um consórcio, sabe-se o número total de parcelas, a quantidade de parcelas pagas e o valor da parcela (fixa). Escreva um algoritmo que mostre a quantidade de parcelas restantes e o saldo devedor do cliente.</h3>
+
+		<p>Total parcelas: <input type="number" id="totalParcelas"></p>
+		<p>Quantidade pagas: <input type="number" id="quantidadePagas"></p>
+		<p>Valor parcela: <input type="number" id="valorParcela"></p>
+
+		<button type="button" onclick="calcularParcelas()">Calcular</button>
+
+		<h4 id="saldoDevedor">Saldo devedor:</h4>
+		<h4 id="parcelasRestantes"></h4>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
