@@ -1,0 +1,39 @@
+/* Importa a fonte 'Robot Mono' da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+html {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #002e66;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	padding: 25px 35px 100px;
+	background-color: #f9f9f9;
+}
+
+.display {
+	height: 40px;
+	width: 130px;
+	font-family: Consolas;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: right;
+	padding: 0px 10px;
+}
+
+hr {
+    margin: 75px 0 45px;
+}
+
+input, button {
+    font-size: 1rem;
+}
