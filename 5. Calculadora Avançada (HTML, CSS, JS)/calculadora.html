@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avançada (HTML, CSS e JavaScript)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <!-- Display -->
+            <div id="display">0</div>
+
+            <div class="teclado">
+                <!-- linha 1 -->
+                <div class="tecla" onclick="pegarValor(7)">7</div>
+                <div class="tecla" onclick="pegarValor(8)">8</div>
+                <div class="tecla" onclick="pegarValor(9)">9</div>
+                <div class="tecla" onclick="pegarOperador('/')">/</div>
+                <div class="tecla" onclick="resetar()">C</div>
+                
+                <!-- linha 2 -->
+                <div class="tecla" onclick="pegarValor(4)">4</div>
+                <div class="tecla" onclick="pegarValor(5)">5</div>
+                <div class="tecla" onclick="pegarValor(6)">6</div>
+                <div class="tecla" onclick="pegarOperador('*')">*</div>
+                <div class="tecla" onclick="pegarOperador('%')">%</div>
+
+                <!-- linha 3 -->
+                <div class="tecla" onclick="pegarValor(1)">1</div>
+                <div class="tecla" onclick="pegarValor(2)">2</div>
+                <div class="tecla" onclick="pegarValor(3)">3</div>
+                <div class="tecla" onclick="pegarOperador('-')">-</div>
+                <div class="tecla igual" onclick="verificarIgual()">
+                    <span>=</span>
+                </div>
+
+                <!-- linha 4 -->
+                <div class="tecla zero" onclick="pegarValor(0)">0</div>
+                <div class="tecla" onclick="pegarValor(',')">,</div>
+                <div class="tecla" onclick="pegarOperador('+')">+</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclui o arquivo de som -->
+    <audio src="sfx/blip.ogg" id="blip"></audio>
+    <script src="js/script.js"></script>
+</body>
+</html>
