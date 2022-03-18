@@ -1,0 +1,115 @@
+
+* {
+    box-sizing: border-box;
+}
+    
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    color: #232323;
+    background-color: #232323;
+}
+
+/* Login Animado */
+#modal {
+    width: 400px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: solid 1px #dddddd;
+    /* outline: none; */
+}
+
+button {
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modal button {
+    background-color: #f2c800;
+}
+
+#modal button:hover {
+    background-color: #ffd815;
+}
+
+#modal.animar {
+    animation-name: slide;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    /* Termina e fica */
+    /* fill-mode: Modo de preenchimento, por padrão 
+        faz a animação e volta ao início */
+}
+
+#load {
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    border: solid 10px;
+    border-radius: 50%;
+    display: none;
+
+    /* cores */
+    border-top-color: #008cff99;
+    border-left-color: #008cff77;
+    border-bottom-color: #008cff55;
+    border-right-color: #008cff33;
+}
+
+#load.loader {
+    animation-name: load;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#notificacao {
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+/* Animações */
+@keyframes slide {
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
