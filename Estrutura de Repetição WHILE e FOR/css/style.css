@@ -1,0 +1,30 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #002e66;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 25px 45px 100px;
+    background-color: #f9f9f9;
+}
+
+input, button {
+    font-size: 1rem;
+}
+
+img {
+    width: 50%;
+}
+
+.img2 {
+    width: 80%;
+}
