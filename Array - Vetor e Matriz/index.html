@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Vetor e Matriz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Array - Vetor e Matriz</h1>
+
+        <h4>Array é uma variável especial, que pode guardar mais de um valor.</h4>
+
+        <p>O Array é utilizado para armazenar uma coleção de elementos em uma única variável.</p>
+
+        <p>Na prática, o array é uma estrutura de dados que contém um índice numérico e um elemento, que pode ser de qualquer tipo primitivo de dados (int, float, string, boolean), um objeto ou outro array.</p>
+
+        <p>Se não tivessemos arrays, teríamos que armazenar cada item em uma variável separada, então chamar o código para mostrar e adicionar separadamente cada item.</p>
+
+        <p>Por exemplo, se tivermos que adicionar 5 estudantes numa turma (lista), já daria bastante trabalho, porque temos que criar 5 variáveis: aluno1, aluno2, aluno3, aluno4, aluno5. Agora vamos imaginar que a turma é maior, com 30 estudantes? E se fosse uma palestra para 100 pessoas? Ou com 500?</p>
+
+        <p>Esta abordagem torna o trabalho muito repetitivo, menos eficiente e mais suscetível a erros.</p>
+
+        <img src="img/array-1.png" alt="Array em JavaScript">
+
+
+
+
+
+
+        <hr>
+        <h4>Diferença entre Array e Objeto (em JavaScript)</h4>
+
+        <p>Em JavaScript, os Arrays usam índices numerados e os Objetos usam índices nomeados.</p>
+
+        <pre>
+            // Array
+            const carros = [
+                "Palio",
+                "Civic",
+                "Mustang",
+            ];
+        </pre>
+
+        <pre>
+            // Objeto
+            const carros = {
+                "Fiat": "Palio",
+                "Honda": "Civic",
+                "Ford": "Mustang",
+            };
+        </pre>
+
+
+
+
+
+
+
+        <hr>
+        <h4>Preencher um Array com números aleatórios</h4>
+
+        <input type="number" id="valorInformado">
+        <button onclick="preencherNumerosAleatorios()">Preencher</button>
+
+        <!-- Resultado no console.log -->
+
+
+
+
+        
+
+        <hr>
+        <h4>Escreva um algoritmo para cadastrar os alunos de uma turma. Informe a quantidade de alunos da turma, depois informe a matrícula, o nome e a idade de cada aluno. Mostre o resultado.</h4>
+
+        <input type="number" id="numeroAlunos">
+        <button onclick="cadastrarAlunos()">Cadastrar Alunos</button>
+
+        <div id="turma"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
