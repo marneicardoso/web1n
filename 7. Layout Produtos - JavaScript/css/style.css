@@ -7,13 +7,6 @@
     font-size: 18px;
 }
 
-html {
-    /* Torna a rolagem mais suave */
-    scroll-behavior: smooth;
-
-    /* TESTAR SE FUNCIONA */
-}
-
 body {
     background-color: #f9f9f9;
 }
@@ -57,10 +50,12 @@ nav {
     color: #493b14;
 }
 
-/* Pega o elemento diretamente dentro do elemento pai */
-/* .row > img {
-    width: 100%;
-} */
+.bloco {
+    /* padding: 35px; */
+    min-height: 800px;
+    padding-top: 80px;
+    text-align: justify;
+}
 
 /* Produto */
 .produto {
